@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 type Props = {
   buttonText: string;
   svg: any;
-  onClick: IntrinsicAttributes & Props;
+  // onClick: IntrinsicAttributes & Props;
   isActive: string;
   href: string;
 };
@@ -15,7 +15,7 @@ const NavButton = (props: Props) => {
 
   return (
     <button
-      onClick={props.onClick}
+      // onClick={props.onClick}
       className={` relative w-48 h-14 transition-all duration-300 ease-in-out group hover:bg-primary hover:shadow-slate-300 hover:shadow-md   ${
         router.pathname == props.href
           ? "bg-primary shadow-slate-300 shadow-md"
